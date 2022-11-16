@@ -1,14 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- meta tags -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Ryan Kelton">
         <meta name="description" content="">
         <meta name="keywords" content="">
-        <title>All Foods Grocery</title>
+        <meta name="robots" content="index, nofollow">
+        <!-- title -->
+        <title>All Food Market</title>
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;800&display=swap" rel="stylesheet">
+        <!-- open graph -->
+        <meta property="og:title" content="All Food Market">
+        <meta property="og:description" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="">
+        <style>
+            img{
+                width: 100%;
+            }
+        </style>
     </head>
     <body>
-        
+        <a id="skip" class="sr-only" href="#main-content">Skip to Main Content</a>
+        <!-- styling skip links: https://webaim.org/techniques/css/invisiblecontent/ -->
+        <header>
+            <h1>All Food Market</h1>
+            <nav>
+                <!-- hamburger -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Weekly Ad</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Coupon Club</a></li>
+                </ul>
+                <!-- cart -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="6" cy="19" r="2" />
+                    <circle cx="17" cy="19" r="2" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                  </svg>
+            </nav>
+        </header>
+        <main id="main-content">
+            <!-- weekly advertisement -->
+            <section>
+                <img src="./images/hero.jpg" alt="Black frying pan on a wooden table surrounded by various vegetables">
+                <h2>Weekly Advertisement</h2>
+                <p>This week&apos;s specials are just in time for back to school. Everything you need to get the kids ready for their first day-- from school supplies to healthy lunches.</p>
+                <a href="#" class="button">View Weekly Ad</a>
+            </section>
+            <!-- categories -->
+            <section>
+                <h2>Shop Categories</h2>
+                <!-- meat -->
+                <section>
+                    <img src="./images/meat.jpg" alt="Raw, sliced meat on a cutting block">
+                    <h3>Meat</h3>
+                </section>
+                <!-- seafood -->
+                <section>
+                    <img src="./images/seafood.jpg" alt="Cooked seafood with garnish and sides on a light blue plate">
+                    <h3>Seafood</h3>
+                </section>
+                <!-- dairy -->
+                <section>
+                    <img src="./images/dairy.jpg" alt="Brown eggs in a bowl sitting next to a glass of milk, next to a small jug of milk">
+                    <h3>Dairy</h3>
+                </section>
+                <!-- produce -->
+                <section>
+                    <img src="./images/produce.jpg" alt="Apple slices next to a kitchen knife on a wooden table">
+                    <h3>Produce</h3>
+                </section>
+                <!-- bakery -->
+                <section>
+                    <img src="./images/bakery.jpg" alt="Chocolate chip muffins in a pan, held by someone wearing a light blue oven mit">
+                    <h3>Bakery</h3>
+                </section>
+                <!-- beverages -->
+                <section>
+                    <img src="./images/beverages.jpg" alt="Cup of tee with a lemon slice, next to a cutting board with lemon slices on top and tea bags off to the side">
+                    <h3>Beverages</h3>
+                </section>
+                <!-- view all -->
+                <a href="#" class="button">View All</a>
+            </section>
+            <!-- coupons -->
+            <section>
+                <h2>Coupons</h2>
+                <p>All store coupons are accepted until their expiration date. Don&apos;t miss DOUBLE COUPONS every Tuesday. In-store only.</p>
+                <!-- salad dressing -->
+                <section>
+                    <img src="./images/dressing.png" alt="See-through bottle of italian dressing with a front label and black cap">
+                    <h3>Salad Dressing</h3>
+                    <p>Exp. 12/3/2021</p>
+                    <p>Buy 2, get 2 with coupon</p>
+                    <a href="#" class="clip-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
+                        Clip
+                    </a>
+                </section>
+                <!-- honey -->
+                <section>
+                    <img src="./images/honey.png" alt="See-through bottle of honey with a front label and yellow cap">
+                    <h3>Honey</h3>
+                    <p>Exp. 1/3/2022</p>
+                    <p>Save &#x24;0.35</p>
+                    <a href="#" class="clip-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
+                        Clip
+                    </a>
+                </section>
+                <!-- marinara -->
+                <section>
+                    <img src="./images/marinara.jpeg" alt="See-through glass bottle of marinara with a front label">
+                    <h3>Marinara</h3>
+                    <p>Exp. 12/3/2021</p>
+                    <p>Buy 1, get 1. Mix and match.</p>
+                    <a href="#" class="clip-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
+                        Clip
+                    </a>
+                </section>
+                <!-- mustard -->
+                <section>
+                    <img src="./images/marinara.jpeg" alt="Yellow squirt bottle of mustard with a front label">
+                    <h3>Mustard</h3>
+                    <p>Exp. 12/31/2021</p>
+                    <p>Save &#x24;1.00 on 48oz. size. Limit 1 per customer</p>
+                    <a href="#" class="clip-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
+                        Clip
+                    </a>
+                </section>
+                <!-- view all -->
+                <a href="#" class="button">View All</a>
+            </section>
+        </main>
     </body>
 </html>
