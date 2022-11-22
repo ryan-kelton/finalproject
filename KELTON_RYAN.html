@@ -20,11 +20,8 @@
         <meta property="og:type" content="website">
         <meta property="og:image" content="">
         <meta property="og:url" content="">
-        <style>
-            img{
-                width: 100%;
-            }
-        </style>
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <a id="skip" class="sr-only" href="#main-content">Skip to Main Content</a>
@@ -32,13 +29,22 @@
         <header>
             <h1>All Food Market</h1>
             <nav>
+                <!-- cart -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="6" cy="19" r="2" />
+                <circle cx="17" cy="19" r="2" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+                </svg>
                 <!-- hamburger -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <line x1="4" y1="6" x2="20" y2="6" />
-                    <line x1="4" y1="12" x2="20" y2="12" />
-                    <line x1="4" y1="18" x2="20" y2="18" />
-                  </svg>
+                <input type="checkbox" id="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="4" y1="12" x2="20" y2="12" />
+                <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Weekly Ad</a></li>
@@ -46,26 +52,21 @@
                     <li><a href="#">Coupons</a></li>
                     <li><a href="#">Coupon Club</a></li>
                 </ul>
-                <!-- cart -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <circle cx="6" cy="19" r="2" />
-                    <circle cx="17" cy="19" r="2" />
-                    <path d="M17 17h-11v-14h-2" />
-                    <path d="M6 5l14 1l-1 7h-13" />
-                  </svg>
+                
             </nav>
         </header>
         <main id="main-content">
             <!-- weekly advertisement -->
-            <section>
-                <img src="./images/hero.jpg" alt="Black frying pan on a wooden table surrounded by various vegetables">
-                <h2>Weekly Advertisement</h2>
-                <p>This week&apos;s specials are just in time for back to school. Everything you need to get the kids ready for their first day-- from school supplies to healthy lunches.</p>
-                <a href="#" class="button">View Weekly Ad</a>
+            <section id="weekly-ad">
+                <!-- <img src="./images/hero.jpg" alt="Black frying pan on a wooden table surrounded by various vegetables"> -->
+                <div id="ad-text">
+                    <h2>Weekly Advertisement</h2>
+                    <p>This week&apos;s specials are just in time for back to school. Everything you need to get the kids ready for their first day-- from school supplies to healthy lunches.</p>
+                    <a href="#" class="button">View Weekly Ad</a>
+                </div>
             </section>
             <!-- categories -->
-            <section>
+            <section id="categories">
                 <h2>Shop Categories</h2>
                 <!-- meat -->
                 <section>
@@ -98,59 +99,131 @@
                     <h3>Beverages</h3>
                 </section>
                 <!-- view all -->
-                <a href="#" class="button">View All</a>
+                <a href="#" class="button-2">View All</a>
             </section>
             <!-- coupons -->
-            <section>
-                <h2>Coupons</h2>
-                <p>All store coupons are accepted until their expiration date. Don&apos;t miss DOUBLE COUPONS every Tuesday. In-store only.</p>
+            <section id="coupons">
+                <div id="coupons-text">
+                    <h2>Coupons</h2>
+                    <p>All store coupons are accepted until their expiration date. Don&apos;t miss DOUBLE COUPONS every Tuesday. In-store only.</p>
+                </div>
                 <!-- salad dressing -->
                 <section>
-                    <img src="./images/dressing.png" alt="See-through bottle of italian dressing with a front label and black cap">
-                    <h3>Salad Dressing</h3>
-                    <p>Exp. 12/3/2021</p>
-                    <p>Buy 2, get 2 with coupon</p>
-                    <a href="#" class="clip-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
-                        Clip
-                    </a>
+                    <div>
+                        <img src="./images/dressing.png" alt="See-through bottle of italian dressing with a front label and black cap">
+                    </div>
+                    <div class="c-description">
+                        <h3>Salad Dressing</h3>
+                        <p>Exp. 12/3/2021</p>
+                        <p>Buy 2, get 2 with coupon</p>
+                        <a href="#" class="clip-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
+                            Clip
+                        </a>
+                    </div>
                 </section>
                 <!-- honey -->
                 <section>
-                    <img src="./images/honey.png" alt="See-through bottle of honey with a front label and yellow cap">
-                    <h3>Honey</h3>
-                    <p>Exp. 1/3/2022</p>
-                    <p>Save &#x24;0.35</p>
-                    <a href="#" class="clip-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
-                        Clip
-                    </a>
+                    <div>
+                        <img src="./images/honey.jpeg" alt="See-through bottle of honey with a front label and yellow cap">
+                    </div>
+                    <div class="c-description">
+                        <h3>Honey</h3>
+                        <p>Exp. 1/3/2022</p>
+                        <p>Save &#x24;0.35</p>
+                        <a href="#" class="clip-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
+                            Clip
+                        </a>
+                    </div>
                 </section>
                 <!-- marinara -->
                 <section>
-                    <img src="./images/marinara.jpeg" alt="See-through glass bottle of marinara with a front label">
-                    <h3>Marinara</h3>
-                    <p>Exp. 12/3/2021</p>
-                    <p>Buy 1, get 1. Mix and match.</p>
-                    <a href="#" class="clip-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
-                        Clip
-                    </a>
+                    <div>
+                        <img src="./images/marinara.jpeg" alt="See-through glass bottle of marinara with a front label">
+                    </div>
+                    <div class="c-description">
+                        <h3>Marinara</h3>
+                        <p>Exp. 12/3/2021</p>
+                        <p>Buy 1, get 1. Mix and match.</p>
+                        <a href="#" class="clip-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
+                            Clip
+                        </a>
+                    </div>                 
                 </section>
                 <!-- mustard -->
                 <section>
-                    <img src="./images/marinara.jpeg" alt="Yellow squirt bottle of mustard with a front label">
-                    <h3>Mustard</h3>
-                    <p>Exp. 12/31/2021</p>
-                    <p>Save &#x24;1.00 on 48oz. size. Limit 1 per customer</p>
-                    <a href="#" class="clip-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#A64037" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
-                        Clip
-                    </a>
+                    <div>
+                        <img src="./images/mustard.png" alt="Yellow squirt bottle of mustard with a front label">
+                    </div>
+                    <div class="c-description">
+                        <h3>Mustard</h3>
+                        <p>Exp. 12/31/2021</p>
+                        <p>Save &#x24;1.00 on 48oz. Limit 1 per customer</p>
+                        <a href="#" class="clip-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1F4373" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="6" cy="7" r="3" /><circle cx="6" cy="17" r="3" /><line x1="8.6" y1="8.6" x2="19" y2="19" /><line x1="8.6" y1="15.4" x2="19" y2="5" /></svg>
+                            Clip
+                        </a>
+                    </div>                  
                 </section>
                 <!-- view all -->
-                <a href="#" class="button">View All</a>
+                <div id="center-button">
+                    <a href="#" class="button-3">View All</a>
+                </div>
             </section>
+            <!-- coupon club -->
+            <form>
+                <h2>Coupon Club</h2>
+                <!-- first name -->
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" value="First Name" placeholder="First Name">
+                <!-- last name -->
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" value="Last Name" placeholder="Last Name">
+                <!-- email -->
+                <label for="email">Email Address</label>
+                <input type="email" id="email" value="Email" placeholder="Email Address">
+                <!-- submit -->
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <footer>
+                <h2>All Foods Mart</h2>
+                <p>123 Mockup Street</p>
+                <p>San Francisco, CA 10000</p>
+                <p>(555) 555-5555</p>
+                <!-- copyright -->
+                <small>Copyright &copy; 2022. All rights reserved.</small>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                        </svg></a>
+                    </li>
+                    <li>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <polyline points="3 7 12 13 21 7" />
+                        </svg></a>
+                    </li> 
+                    <li>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                        </svg></a>
+                    </li>
+                    <li>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg></a>
+                    </li>
+                </ul>   
+            </footer>
         </main>
     </body>
 </html>
