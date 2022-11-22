@@ -29,6 +29,13 @@
         <header>
             <h1>All Food Market</h1>
             <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Weekly Ad</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Coupon Club</a></li>
+                </ul>
                 <!-- cart -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -39,20 +46,12 @@
                 </svg>
                 <!-- hamburger -->
                 <input type="checkbox" id="hamburger">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" id="hamburger-icon" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <line x1="4" y1="6" x2="20" y2="6" />
                 <line x1="4" y1="12" x2="20" y2="12" />
                 <line x1="4" y1="18" x2="20" y2="18" />
-                </svg>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Weekly Ad</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Coupons</a></li>
-                    <li><a href="#">Coupon Club</a></li>
-                </ul>
-                
+                </svg>  
             </nav>
         </header>
         <main id="main-content">
@@ -176,24 +175,32 @@
             <form>
                 <h2>Coupon Club</h2>
                 <!-- first name -->
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" value="First Name" placeholder="First Name">
-                <!-- last name -->
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" value="Last Name" placeholder="Last Name">
-                <!-- email -->
-                <label for="email">Email Address</label>
-                <input type="email" id="email" value="Email" placeholder="Email Address">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" value="First Name" placeholder="First Name">
+                </div>
+                <div>
+                    <!-- last name -->
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" value="Last Name" placeholder="Last Name">
+                </div>
+                <div>
+                    <!-- email -->
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" value="Email" placeholder="Email Address">
+                </div>
                 <!-- submit -->
                 <input type="submit" id="submit" value="Submit">
             </form>
             <footer>
-                <h2>All Foods Mart</h2>
-                <p>123 Mockup Street</p>
-                <p>San Francisco, CA 10000</p>
-                <p>(555) 555-5555</p>
-                <!-- copyright -->
-                <small>Copyright &copy; 2022. All rights reserved.</small>
+                <div>
+                    <h2>All Foods Mart</h2>
+                    <p>123 Mockup Street</p>
+                    <p>San Francisco, CA 10000</p>
+                    <p>(555) 555-5555</p>
+                    <!-- copyright -->
+                    <small>Copyright &copy; 2022. All rights reserved.</small>
+                </div>
                 <ul class="social-icons">
                     <li>
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
