@@ -151,22 +151,20 @@ nav input:checked ~ ul{
     background-position: center;
     background-size: cover;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: end;
+    padding: 2rem 1rem;
 }
-#ad-text{
-    padding: 1rem;
-    margin-bottom: 3rem;
-    color: var(--White);
-    max-width: 65ch;
-}
-#ad-text h2{
+#ad-header{
     font-size: 2rem;
     font-weight: 800;
     margin-bottom: 1rem;
+    color: var(--White);
 }
-#ad-text p{
-    margin-bottom: 2.5rem;
+#ad-p{
+    margin-bottom: 1.5rem;
+    max-width: 65ch;
+    color: var(--White);
 }
 .button{
     background-color: #fff;
@@ -175,6 +173,8 @@ nav input:checked ~ ul{
     color: var(--Black);
     text-decoration: none;
     font-weight: 800;
+    max-width: max-content;
+    margin-bottom: 2rem;
 }
 .button:hover{
     background-color: var(--Blueberry);
@@ -386,7 +386,7 @@ footer p:last-of-type{
         justify-content: center;
         align-items: center;
     }
-    #ad-text{
+    #ad-p{
         text-align: center;
     }
     #categories{
