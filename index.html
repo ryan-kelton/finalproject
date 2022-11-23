@@ -32,13 +32,15 @@
             <nav>
                 <h2 class="sr-only">Navigation</h2>
                 <!-- cart -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <a href="#"><span class="sr-only">Cart</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <circle cx="6" cy="19" r="2" />
                 <circle cx="17" cy="19" r="2" />
                 <path d="M17 17h-11v-14h-2" />
                 <path d="M6 5l14 1l-1 7h-13" />
                 </svg>
+                </a>
                 <!-- hamburger -->
                 <input type="checkbox" id="hamburger" name="hamburger">
                 <label for="hamburger" class="sr-only">Hamburger Menu Toggle</label>
@@ -69,35 +71,47 @@
             <section id="categories">
                 <h2>Shop Categories</h2>
                 <!-- meat -->
-                <section>
-                    <img src="./images/meat.webp" alt="Raw, sliced meat on a cutting block">
-                    <h3>Meat</h3>
-                </section>
+                <a href="#" class="cat-a"><span class="sr-only">Meat</span>
+                    <section>
+                        <img src="./images/meat.webp" alt="Raw, sliced meat on a cutting block">
+                        <h3>Meat</h3>
+                    </section>
+                </a>    
                 <!-- seafood -->
-                <section>
-                    <img src="./images/seafood.webp" alt="Cooked seafood with garnish and sides on a light blue plate">
-                    <h3>Seafood</h3>
-                </section>
+                <a href="#" class="cat-a"><span class="sr-only">Seafood</span>
+                    <section>
+                        <img src="./images/seafood.webp" alt="Cooked seafood with garnish and sides on a light blue plate">
+                        <h3>Seafood</h3>
+                    </section>
+                </a>
                 <!-- dairy -->
-                <section>
-                    <img src="./images/dairy.webp" alt="Brown eggs in a bowl sitting next to a glass of milk, next to a small jug of milk">
-                    <h3>Dairy</h3>
-                </section>
+                <a href="#" class="cat-a"><span class="sr-only">Dairy</span>
+                    <section>
+                        <img src="./images/dairy.webp" alt="Brown eggs in a bowl sitting next to a glass of milk, next to a small jug of milk">
+                        <h3>Dairy</h3>
+                    </section>
+                </a>
                 <!-- produce -->
-                <section>
-                    <img src="./images/produce.webp" alt="Apple slices next to a kitchen knife on a wooden table">
-                    <h3>Produce</h3>
-                </section>
+                <a href="#" class="cat-a"><span class="sr-only">Produce</span>
+                    <section>
+                        <img src="./images/produce.webp" alt="Apple slices next to a kitchen knife on a wooden table">
+                        <h3>Produce</h3>
+                    </section>
+                </a>
                 <!-- bakery -->
-                <section>
-                    <img src="./images/bakery.webp" alt="Chocolate chip muffins in a pan, held by someone wearing a light blue oven mit">
-                    <h3>Bakery</h3>
-                </section>
+                <a href="#" class="cat-a"><span class="sr-only">Bakery</span>
+                    <section>
+                        <img src="./images/bakery.webp" alt="Chocolate chip muffins in a pan, held by someone wearing a light blue oven mit">
+                        <h3>Bakery</h3>
+                    </section>
+                </a>
                 <!-- beverages -->
-                <section>
-                    <img src="./images/beverages.webp" alt="Cup of tee with a lemon slice, next to a cutting board with lemon slices on top and tea bags off to the side">
-                    <h3>Beverages</h3>
-                </section>
+                <a href="#" class="cat-a"><span class="sr-only">Beverages</span>
+                    <section>
+                        <img src="./images/beverages.webp" alt="Cup of tee with a lemon slice, next to a cutting board with lemon slices on top and tea bags off to the side">
+                        <h3>Beverages</h3>
+                    </section>
+                </a>
                 <!-- view all -->
                 <a href="#" class="button-2">View All</a>
             </section>
@@ -191,7 +205,7 @@
                     <input type="email" id="email" name="email" placeholder="Email Address">
                 </div>
                 <!-- submit -->
-                <input type="submit" id="submit" name="Submit">
+                <input type="submit" id="submit" name="Submit" value="Submit">
             </form>
             <footer>
                 <div>
